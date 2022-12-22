@@ -2,8 +2,7 @@
 
 @section('content')
   <main class="container">
-    HOME
+    GAMES
   </main>
-
 
 @endsection

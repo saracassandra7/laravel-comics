@@ -7,34 +7,34 @@
       <nav>
         <ul>
           <li>
-            <a href="#">characters</a>
+            <a class="{{ Route::currentRouteName() === 'characters' ? 'active' : '' }}" href="{{ route('characters') }}">characters</a>
           </li>
           <li>
-            <a class="active" href="#">comics</a>
+            <a  class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}" href="{{ route('comics')}}">comics</a>
           </li>
           <li>
-            <a href="#">movies</a>
+            <a class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}" href="{{ route('movies')}}">movies</a>
           </li>
           <li>
-            <a href="#">tv</a>
+            <a class="{{ Route::currentRouteName() === 'tv' ? 'active' : '' }}" href="{{ route('tv')}}">tv</a>
           </li>
           <li>
-            <a href="#">games</a>
+            <a class="{{ Route::currentRouteName() === 'games' ? 'active' : '' }}" href="{{ route('games')}}">games</a>
           </li>
           <li>
-            <a href="#">collectibles</a>
+            <a class="{{ Route::currentRouteName() === 'collectibles' ? 'active' : '' }}" href="{{ route('collectibles')}}">collectibles</a>
           </li>
           <li>
-            <a href="#">videos</a>
+            <a class="{{ Route::currentRouteName() === 'videos' ? 'active' : '' }}" href="{{ route('videos')}}">videos</a>
           </li>
           <li>
-            <a href="#">fans</a>
+            <a class="{{ Route::currentRouteName() === 'fans' ? 'active' : '' }}" href="{{ route('fans')}}">fans</a>
           </li>
           <li>
-            <a href="#">news</a>
+            <a class="{{ Route::currentRouteName() === 'news' ? 'active' : '' }}" href="{{ route('news')}}">news</a>
           </li>
           <li>
-            <a href="#">shop</a>
+            <a class="{{ Route::currentRouteName() === 'shop' ? 'active' : '' }}" href="{{ route('shop')}}">shop</a>
           </li>
         </ul>
       </nav>
