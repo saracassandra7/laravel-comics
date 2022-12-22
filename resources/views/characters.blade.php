@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-  <main class="container">
+  <main>
     CHARACTERS
   </main>
 

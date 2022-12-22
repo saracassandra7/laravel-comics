@@ -59,6 +59,55 @@ header{
   background-size: cover;
 }
 
+//pagina comics
+main{
+  background-color: #1c1c1c;
+  color: #f5e8fc;
+  .btn, button{
+    background-color: $main-blue;
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .btn{
+    transform: translateY(-20px)
+  }
+  .container-btn{
+    display: flex;
+    justify-content: center;
+    button{
+     color: #f5e8fc;
+     outline: none;
+     border: none;
+     font-weight: bold;
+    }
+  }
+  .comics{
+    display: flex;
+    flex-wrap: wrap;
+
+    .card{
+      width: calc(100% / 6 - 5px);
+      margin-bottom: 20px;
+      .card-img{
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        img{
+          max-width: 100%;
+        }
+      }
+      span{
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 15px 0;
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
 //menu azzurro
 .container-blue{
   background-color: $main-blue;
