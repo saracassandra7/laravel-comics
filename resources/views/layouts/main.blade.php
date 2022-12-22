@@ -9,6 +9,9 @@
   <title>Laravel Comics</title>
 </head>
 <body>
+  @include('partials.header')
+
+
   @yield('content')
   
 </body>

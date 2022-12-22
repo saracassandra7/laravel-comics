@@ -1,4 +1,6 @@
 //@import '~bootstrap/scss/bootstrap'
+@use "./partials/mixin" as *;
+@use "./partials/variables" as *;
 
 *{
   margin: 0;
@@ -19,3 +21,34 @@ body{
 img{
   max-width: 100%;
 }
+
+header{
+  height: 95px;
+  .container{
+   @include centerFlex('vertical');
+   @include menuStyle();
+   justify-content: space-between;
+   img{
+    width: 70px;
+   }
+   ul{
+    @include centerFlex('horizontal');
+    a{
+     color: black;
+     text-transform: uppercase;
+     padding: 1.5rem .9rem 3.1rem .9rem;
+     font-size: .85rem;
+     font-weight: bold;
+     display: inline-block;
+     margin-bottom: 10px;
+     &:hover, &.active{
+      border-bottom: 4px solid $main-blue;
+     }
+     &.active{
+      color: $main-blue;
+     }
+    }
+   }
+  }
+}
+
