@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   @vite('resources/js/app.js')
-  <title>Document</title>
+  <title>Laravel Comics</title>
 </head>
 <body>
+  @yield('content')
   
 </body>
 </html>
