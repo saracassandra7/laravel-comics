@@ -91,6 +91,7 @@ main{
     .card{
       width: calc(100% / 6 - 5px);
       margin-bottom: 20px;
+      color: white;
       .card-img{
         width: 150px;
         height: 150px;
@@ -200,6 +201,35 @@ footer{
           }
         }
       }
+    }
+  }
+}
+
+//pagina di dettaglio del comic
+.comic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+
+  .comic-img{
+    margin-right: 30px;
+  }
+
+  .comic-info{
+    width: calc(100% / 1.5);
+
+    h1{
+      text-transform: uppercase;
+    }
+
+    .description{
+      margin: 15px 0;
+    }
+
+    .credits{
+      font-size: .85rem;
+      color: gray;
     }
   }
 }

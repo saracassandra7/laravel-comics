@@ -19,6 +19,14 @@ Route::get('/', function () {
     return view('comics', compact('comics'));
 })->name('comics');
 
+Route::get('/comic-detail/{id}', function($id){
+    $comics = config('db.comics');
+    $comic_get = array_filter($comics, fn($comic) => $comic['id'] == $id);
+    $comic = $comic_get[array_key_first($comic_get)];
+
+    return view('comic_detail', compact('comic'));
+})->name('comic_detail');
+
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
